@@ -1,7 +1,7 @@
 let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner }) => {
 const sections = [
 {
-title: `𝐋𝐈𝐒𝐓𝐀 𝐃𝐄 𝐎𝐏𝐂𝐈𝐎𝐍𝐄𝐒`,
+title: `ЛИСТ КОМАНД`,
 rows: [
 {title: "✨ | ПРИВЕТСТВИЕ", description: "ВКЛЮЧИТЬ ИЛИ ВЫКЛЮЧИТЬ", rowId: `${usedPrefix + command} приветствие`},
 {title: "🌎 | ПУБЛИЧНЫЙ", description: "БОТ СТАНОВИТСЯ ПУБЛИЧНЫМ ИЛИ ЧАСТНЫМ ИСПОЛЬЗОВАНИЕМ", rowId: `${usedPrefix + command} публичный`},

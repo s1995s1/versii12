@@ -17,7 +17,7 @@ if (m.text.includes(linkThisGroup)) return !0
 if (m.text.includes(linkThisGroup2)) return !0
 if (m.text.includes(linkThisGroup3)) return !0
 }    
-await conn.sendButton(m.chat, `*「 АНТИ ССЫЛКА 」*\n*ВЫ НАРИШИЛИ ПРАЫВИЛА ГРУППЫ *\n*ДО ВСТРЕЧИ👋, ${await this.getName(m.sender)} СПАМЩИКИ НАДОЕЛИ УЖЕ!!*${isBotAdmin ? '' : '\n\n*ОТКУДА ВЫ БЛИН БЕРЕТЕСЬ*'}`, author, ['ВЫКЛЮЧИТЬ АНТИССЫЛКУ', '/выключит атиссылку2'], m)    
+await conn.sendButton(m.chat, `*「 АНТИ ССЫЛКА 」*\n*ВЫ НАРИШИЛИ ПРАВИЛА ГРУППЫ *\n*ДО ВСТРЕЧИ👋, ${await this.getName(m.sender)} СПАМЩИКИ НАДОЕЛИ УЖЕ!!*${isBotAdmin ? '' : '\n\n*ОТКУДА ВЫ БЛИН БЕРЕТЕСЬ*'}`, author, ['ВЫКЛЮЧИТЬ АНТИССЫЛКУ', '/выключит атиссылку2'], m)    
 if (isBotAdmin && bot.restrict) {
 await conn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: false, id: bang, participant: delet }})
 await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
