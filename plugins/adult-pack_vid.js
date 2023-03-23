@@ -23,7 +23,7 @@ let url5 = await videosxxxc2[Math.floor(Math.random() * videosxxxc2.length)]
 await conn.sendButton(m.chat, `*держи видео🥵*`, author, url5, [['🔄 ДАЛЕЕ 🔄', `${usedPrefix + command}`]], m)    
 break    
 }}
-handler.command = /^(девушка|девушка2|парень|videoxxx|vídeoxxx|порно|videolesbixxx|pornolesbivid|pornolesbianavid|pornolesbiv|pornolesbianav|pornolesv)$/i
+handler.command = /^(девушка|девушка2|парень|порно|videolesbixxx|pornolesbivid|pornolesbianavid|pornolesbiv|pornolesbianav|pornolesv)$/i
 export default handler
 global.pack = [
   "https://i.imgur.com/XbW7FO2.jpg",
