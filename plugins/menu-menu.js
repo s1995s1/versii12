@@ -157,10 +157,10 @@ externalAdReply: {
 showAdAttribution: true,
 mediaType: 'VIDEO',
 mediaUrl: null,
-title: '👑АЛЬТРОН - 𝐁𝐎𝐓 👑',
+title: '👑Хулиган - 𝐁𝐎𝐓 👑',
 body: null,
 thumbnail: img,
-sourceUrl: `Бот Царя`
+sourceUrl: `Бот Серёги`
 }}}
 conn.sendMessage(m.chat, buttonMessage, { quoted: m })
 //await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})
