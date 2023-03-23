@@ -61,9 +61,9 @@ pkg install yarn
 ```
 
 ```bash
-git clone https://github.com/s1995s1/sos2.
+git clone https://github.com/s1995s1/versii12.git
 
-cd sos2
+cd versii12
 ```
 
 ```bash

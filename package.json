@@ -14,16 +14,16 @@
         "test": "node test.js",
         "test2": "nodemon index.js"
     },
-    "homepage": "https://github.com/s1995s1/sos2",
+    "homepage": "https://github.com/s1995s1/versii12",
     "author": {
         "name": "s1995s1"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/s1995s1/sos2.git"
+        "url": "git+https://github.com/s1995s1/versii12.git"
     },
     "bugs": {
-        "url": "https://github.com/s1995s1/sos2/issues"
+        "url": "https://github.com/s1995s1/versii12/issues"
     },
     "license": "GPL-3.0-or-later",
     "dependencies": {

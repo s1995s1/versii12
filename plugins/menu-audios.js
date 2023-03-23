@@ -40,7 +40,7 @@ let str = `
 ° ඬ⃟🔊 _Я худею_
 ° ඬ⃟🔊 _Ага_
 `.trim()
-conn.sendHydrated(m.chat, str, wm, pp, 'wa.me/+79010070455', 'СОЗДАТЕЛЬ', null, null, [
+conn.sendHydrated(m.chat, str, wm, pp, 'wa.me/+79531126750', 'СОЗДАТЕЛЬ', null, null, [
 ['МЕНЮ', '#меню']
 ], m)
 }}
