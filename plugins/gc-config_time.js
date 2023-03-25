@@ -17,10 +17,10 @@ let handler = async (m, { conn, isAdmin, isOwner, args, usedPrefix, command }) =
   }[(args[0] || '')]
   if (isClose === undefined) {
 	  let caption = `
-*• Ejemplo:*
+*• Пример:*
 *${usedPrefix + command} открыть 1*
 *${usedPrefix + command} закрыть 1*
-📌 *_пример использования:_* *${usedPrefix + command} close 1* 
+📌 *_Пример использования:_* *${usedPrefix + command} close 1* 
 *_🌿 Чтобы группа была закрыта на час._*
 `
       m.reply(caption)
@@ -28,12 +28,12 @@ let handler = async (m, { conn, isAdmin, isOwner, args, usedPrefix, command }) =
   }
   let timeoutset = 86400000 * args[1] / 24
   await conn.groupSettingUpdate(m.chat, isClose).then(async _=> {
-	  m.reply(`⚠️ *_Grupo ${isClose == 'announcement' ? 'cerrado' : 'abierto'} ${args[1] ? `durante *${clockString(timeoutset)}_*` : ''}`)
+	  m.reply(`⚠️ *_Группа ${isClose == 'announcement' ? 'закрыта' : 'открыта'} ${args[1] ? `на *${clockString(timeoutset)}_*` : ''}`)
   })
   if (args[1]) {
 	 setTimeout(async () => {
             await conn.groupSettingUpdate(m.chat, `${isClose == 'announcement' ? 'not_announcement' : 'announcement'}`).then(async _=>{
-		    conn.reply(m.chat, `${isClose == 'not_announcement' ? '*El grupo ha sido cerrado, ¡ahora solo los administradores pueden enviar mensajes!*' : '*El grupo se ha abierto, ¡ahora todos los miembros pueden enviar mensajes!*'}!`)
+		    conn.reply(m.chat, `${isClose == 'not_announcement' ? '*Группа была закрыта, теперь только администраторы могут отправлять сообщения!*' : '*Группа открыта, теперь все участники могут отправлять сообщения!*'}!`)
 	    })
         }, timeoutset)
   }
