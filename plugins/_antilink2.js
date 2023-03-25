@@ -13,10 +13,8 @@ if (isBotAdmin) {
 const linkThisGroup = `https://chat.whatsapp.com/${await this.groupInviteCode(m.chat)}`
 const linkThisGroup2 = `https://www.youtube.com/`
 const linkThisGroup3 = `https://youtu.be/`
-const linkThisGroup0 = `https://wa.me/`
 if (m.text.includes(linkThisGroup)) return !0
 if (m.text.includes(linkThisGroup2)) return !0
-if (m.text.includes(linkThisGroup3)) return !0
 if (m.text.includes(linkThisGroup3)) return !0
 }    
 await conn.sendButton(m.chat, `*「 АНТИ ССЫЛКА 」*\n*ВЫ НАРИШИЛИ ПРАВИЛА ГРУППЫ *\n*ДО ВСТРЕЧИ👋, ${await this.getName(m.sender)} СПАМЩИКИ НАДОЕЛИ УЖЕ!!*${isBotAdmin ? '' : '\n\n*ОТКУДА ВЫ БЛИН БЕРЕТЕСЬ*'}`, author, ['ВЫКЛЮЧИТЬ АНТИССЫЛКУ', '/выключит атиссылку2'], m)    
