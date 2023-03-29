@@ -115,7 +115,7 @@ this.sendPresenceUpdate('recording', m.chat)
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}    
     
 if (!chat.isBanned && chat.audios && m.text.match(/(24 года|25 лет|26 лет|27 лет|28 лет|29 лет|30 лет|31 год|32 года|33 года|34 года|35 лет|36 лет|37 лет|38 лет|39 лет|40 лет)/gi)) {    
-let vn = './media/100.mp3'
+let vn = './media/удалите.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}   
    
