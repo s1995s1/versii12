@@ -17,6 +17,11 @@ let vn = './media/бухаю.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
 
+if (!chat.isBanned && chat.audios && m.text.match(/(картинка)/gi)) {    
+let vn = './media/картинка.jpg'
+this.sendPresenceUpdate('recording', m.chat)   
+this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
+
 if (!chat.isBanned && chat.audios && m.text.match(/(подруга|Подруга|Подружка|пожружка)/gi)) {    
 let vn = './media/подруга.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
